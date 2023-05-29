@@ -1,0 +1,265 @@
+/*====================================MOVIL====================================*/
+
+/* Estilos comunes a todas las páginas */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+
+}
+
+/* Titulo + Navegación */
+header{
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  background-color: rgb(43, 40, 40);
+  color: #e6dcaa;
+}
+
+#tituloPrincipal{
+  margin: 20px;
+  width: 50%;
+}
+#tituloPrincipal h1{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 35px;
+}
+#tituloPrincipal h2{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+}
+
+nav{
+  margin: 20px;
+  width: 50%;
+  list-style: none;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: end;
+  width: 100%;
+  height: 100%;
+  list-style: none;
+}
+
+nav ul li{
+  display: flex;
+  width: 15vh; 
+  height: 100%; 
+  list-style: none;
+  font-size: 16px;
+}
+
+nav a {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+  text-decoration: none;
+  font-size: 100%;
+  color: #e6dcaa;
+}
+
+nav a:hover {
+  font-size: 20px;
+  color: #e6dcaa;
+}
+
+/* Inicio */
+.seccionInicio{  
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: center;
+  width: 100%;
+  background-color: #e6dcaa;
+}
+
+.articuloInicio{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin: 20px;
+  width: 90%;
+  height: 250px;
+  border: 1px solid black;
+}
+
+.containerTextoInicio{
+  margin: auto;
+  margin-left: 25px;
+  width: 40%;
+}
+
+.containerImagenInicio{
+  width: 50%;
+  border: 1px solid black;
+}
+
+.containerImagenInicio img{
+  width: 100%;
+  height: 100%;
+}
+
+/* Comparativa */
+.seccionComparativa{  
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+  width: 100%;
+  background-color: #e6dcaa;
+}
+
+table.minimalistBlack {
+  border: 3px solid #afa678;
+  width: 80%;
+  text-align: left;
+  border-collapse: collapse;
+}
+
+table.minimalistBlack td, table.minimalistBlack th {
+  border: 1px solid #afa678;
+  padding: 5px 4px;
+}
+
+table.minimalistBlack tbody td {
+  font-size: 13px;
+}
+
+table.minimalistBlack thead {
+  background: #CFCFCF;
+  background: -moz-linear-gradient(top, #e6dcaa 0%, #e6dcaa 66%, #e6dcaa 100%);
+  background: -webkit-linear-gradient(top, #e6dcaa 0%, #e6dcaa 66%, #e6dcaa 100%);
+  background: linear-gradient(to bottom, #e6dcaa 0%, #e6dcaa 66%, #e6dcaa 100%);
+  border-bottom: 3px solid #afa678;
+}
+
+table.minimalistBlack thead th {
+  font-size: 15px;
+  font-weight: bold;
+  color: black;
+  text-align: left;
+}
+
+/* Media */
+.seccionMedia{  
+  width: 100%;
+  background-color: #e6dcaa;
+}
+/* Contacto */
+.seccionContacto{  
+  width: 100%;
+  background-color: #e6dcaa;
+}
+/* Footer */
+footer{  
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 2%;
+  width: 100%;
+  height: 100px;
+  background-color: rgb(43, 40, 40);
+}
+
+.logoContainer{
+  width: 65px;
+  height: 65px;
+}
+
+.logoContainer:hover{
+  width: 75px;
+  height: 75px;
+}
+
+/*====================================TABLET====================================*/
+@media screen and (min-width: 600px) {
+  
+/* Titulo + Navegación */
+
+
+/* Inicio */
+
+
+/* Comparativa */
+
+/* Media */
+
+/* Contacto */
+
+/* Footer */
+
+}
+/*====================================DISPLAY====================================*//* Navegación */
+@media screen and (min-width: 900px) {
+
+/* Titulo + Navegación */
+nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  width: 100%;
+  height: 100%;
+}
+
+nav ul li{
+  display: flex;  
+
+}
+
+nav ul li a{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* Inicio */
+
+.seccionInicio{  
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-content: space-around;
+  justify-content: space-evenly;
+
+}
+
+.articuloInicio{
+  width: 40%;
+}
+
+
+.containerImagenInicio{
+  width: 50%;
+}
+
+/* Comparativa */
+.seccionComparativa{  
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+
+}
+
+table.minimalistBlack {
+  width: 40%;
+}
+/* Media */
+
+/* Contacto */
+
+/* Footer */
+}
