@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
+
 /*====================================MOVIL====================================*/
 
 /* Estilos comunes a todas las páginas */
@@ -27,13 +29,17 @@ header{
   margin: 20px;
   width: 50%;
 }
-#tituloPrincipal h1{
+
+#tituloPrincipal{
   font-family: 'Open Sans', sans-serif;
-  font-size: 35px;
 }
+
+#tituloPrincipal h1{
+  font-size: 2rem;
+}
+
 #tituloPrincipal h2{
-  font-family: 'Open Sans', sans-serif;
-  font-size: 20px;
+  font-size: 1,3rem;
 }
 
 nav{
@@ -57,12 +63,12 @@ nav ul li{
   width: 15vh; 
   height: 100%; 
   list-style: none;
-  font-size: 16px;
+  font-size: 1rem;
 }
 
 nav a {
   font-family: 'Open Sans', sans-serif;
-  font-size: 15px;
+  font-size: 1rem;
   text-decoration: none;
   font-size: 100%;
   color: #e6dcaa;
@@ -80,6 +86,7 @@ nav a:hover {
   flex-direction: column;
   align-content: center;
   width: 100%;
+  font-family: 'Open Sans', sans-serif;
   background-color: #e6dcaa;
 }
 
@@ -90,7 +97,10 @@ nav a:hover {
   margin: 20px;
   width: 90%;
   height: 250px;
-  border: 1px solid black;
+  border-radius: 10px;
+  border-color: gray;
+  border-width: 5px;
+  border-style: solid;
 }
 
 .containerTextoInicio{
@@ -99,9 +109,13 @@ nav a:hover {
   width: 40%;
 }
 
+.containerTextoInicio > h3{
+  text-decoration: underline;
+}
+
 .containerImagenInicio{
   width: 50%;
-  border: 1px solid black;
+  border: 1px solid gray;
 }
 
 .containerImagenInicio img{
@@ -134,7 +148,7 @@ table.estiloTabla td, table.estiloTabla th {
 }
 
 table.estiloTabla tbody td {
-  font-size: 13px;
+  font-size: 0.8rem;
 }
 
 table.estiloTabla thead {
@@ -146,7 +160,7 @@ table.estiloTabla thead {
 }
 
 table.estiloTabla thead th {
-  font-size: 15px;
+  font-size: 0.9rem;
   font-weight: bold;
   color: black;
   text-align: left;
@@ -172,6 +186,7 @@ table.estiloTabla thead th {
   height: 500px;
   margin: 20px;
   font-family: 'Open Sans', sans-serif;
+  text-decoration: underline;
 }
 
 .containerImagenMedia{
@@ -185,14 +200,21 @@ table.estiloTabla thead th {
   margin: 10px;
   width: 40%;
   height: 80%;
+  border-radius: 10px;
+  border-color: gray;
+  border-width: 5px;
+  border-style: solid;
 }
 
 /* Contacto */
 .seccionContacto{  
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
-  align-content: center;  
+  align-content: center; 
+  justify-content: center; 
   width: 100%;
+  gap: 30px;
   padding: 20px;
   background-color: #e6dcaa;
 }
@@ -201,13 +223,19 @@ table.estiloTabla thead th {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  align-content: center;
   text-align: left;
-  width: 100%;
-  padding: 20px;
+  width: 70%;
+  padding: 30px;
   background-color:rgb(43, 40, 40);
   font-family: 'Open Sans', sans-serif;
+  border-radius: 10px;
+  border-color: gray;
+  border-width: 5px;
+  border-style: solid;
   color: #e6dcaa;
+}
+.articuloContacto > h3{
+  text-decoration: underline;
 }
 
 .containerContacto{
@@ -353,3 +381,4 @@ table.estiloTabla {
 
 
 /* Footer */
+}
